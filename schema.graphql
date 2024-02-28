@@ -23,6 +23,9 @@ type SuperMinter_Minted {
   data_10: BigInt!
   data_11: BigInt!
   data_12: BigInt!
+  transactionHash: String!
+  blockNumber: BigInt!
+  timestamp: BigInt!
   attributionId: BigInt!
   eventsSummary: String!
 }
