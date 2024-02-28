@@ -1,8 +1,6 @@
 name: super minter
 contracts:
 - name: SuperMinter
-  address:
-    - '0x000000000001A36777f9930aAEFf623771b13e70'
   handler: src/EventHandlers.ts
   address:
     - ['0x000000000001A36777f9930aAEFf623771b13e70',"0x0000000000CF4558c36229ac0026ee16D3aE35Cd"]
