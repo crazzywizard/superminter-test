@@ -1,0 +1,11 @@
+name: super minter
+networks:
+- id: 1
+  start_block: 0
+  contracts:
+  - name: SuperMinter
+    address:
+    - '0x0000000000CF4558c36229ac0026ee16D3aE35Cd'
+    handler: src/EventHandlers.ts
+    events:
+    - event: Minted(address indexed edition, uint8 tier, uint8 scheduleNum, address indexed to, (uint32,uint256,address,uint32,uint32,uint32,address,bool,uint256,uint256,uint256,uint256,uint256) data, uint256 indexed attributionId)

@@ -1,0 +1,28 @@
+type EventsSummary {
+  id: ID!
+  superMinter_Minted: [SuperMinter_Minted!]! @derivedFrom(field: "eventsSummary")
+  superMinter_MintedCount: BigInt!
+}
+
+type SuperMinter_Minted {
+  id: ID!
+  edition: String!
+  tier: BigInt!
+  scheduleNum: BigInt!
+  to: String!
+  data_0: BigInt!
+  data_1: BigInt!
+  data_2: String!
+  data_3: BigInt!
+  data_4: BigInt!
+  data_5: BigInt!
+  data_6: String!
+  data_7: Boolean!
+  data_8: BigInt!
+  data_9: BigInt!
+  data_10: BigInt!
+  data_11: BigInt!
+  data_12: BigInt!
+  attributionId: BigInt!
+  eventsSummary: String!
+}
