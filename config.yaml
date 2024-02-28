@@ -1,29 +1,24 @@
 name: super minter
+contracts:
+- name: SuperMinter
+  address:
+    - '0x000000000001A36777f9930aAEFf623771b13e70'
+  handler: src/EventHandlers.ts
+  address:
+    - '0x000000000001A36777f9930aAEFf623771b13e70'
+  events:
+    - event: Minted(address indexed edition, uint8 tier, uint8 scheduleNum, address indexed to, (uint32,uint256,address,uint32,uint32,uint32,address,bool,uint256,uint256,uint256,uint256,uint256) data, uint256 indexed attributionId)
 networks:
   - id: 10
     start_block: 0
     contracts:
       - name: SuperMinter
-        address:
-          - '0x000000000001A36777f9930aAEFf623771b13e70'
-        handler: src/EventHandlers.ts
-        events:
-          - event: Minted(address indexed edition, uint8 tier, uint8 scheduleNum, address indexed to, (uint32,uint256,address,uint32,uint32,uint32,address,bool,uint256,uint256,uint256,uint256,uint256) data, uint256 indexed attributionId)
   - id: 1
     start_block: 0
     contracts:
       - name: SuperMinter
-        address:
-          - '0x000000000001A36777f9930aAEFf623771b13e70'
-        handler: src/EventHandlers.ts
-        events:
-          - event: Minted(address indexed edition, uint8 tier, uint8 scheduleNum, address indexed to, (uint32,uint256,address,uint32,uint32,uint32,address,bool,uint256,uint256,uint256,uint256,uint256) data, uint256 indexed attributionId)
   - id: 8453
     start_block: 0
     contracts:
       - name: SuperMinter
-        address:
-          - '0x000000000001A36777f9930aAEFf623771b13e70'
-        handler: src/EventHandlers.ts
-        events:
-          - event: Minted(address indexed edition, uint8 tier, uint8 scheduleNum, address indexed to, (uint32,uint256,address,uint32,uint32,uint32,address,bool,uint256,uint256,uint256,uint256,uint256) data, uint256 indexed attributionId)
+        
